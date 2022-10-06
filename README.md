@@ -1,1 +1,2 @@
-# dark-mode-calculator-html-css-js
+# ex01-dark-mode-calculator
+# ex02-
