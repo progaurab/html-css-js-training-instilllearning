@@ -1,1 +1,0 @@
-In this guide, you’ll learn how to Build A Notes App in HTML CSS & JavaScript. To create this Notes App in JavaScript. First, you need to create three Files: HTML, CSS & JavaScript File.
