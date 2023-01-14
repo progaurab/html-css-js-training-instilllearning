@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="pencil-effact.css">
+    <title>Instill Learning - CSS image filter effacts</title>
+</head>
+<body>
+    <section>
+        <h1>Brightness</h1>
+        <p>This filter controls the brightness of your images. It accepts values greater than or equal to zero as its parameter. A value of 0% will give you a completely black output. Similarly, a value of 100% will give you the original image. You can specify values greater than 100% to get even brighter images. For instance, a value of 300% will make the image 3 times as bright.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="brightness100" src="adarsh.jpeg">
+                <figcaption>Original Image - brightness(100%)</figcaption>
+            </figure>
+            <figure>
+                <img class="brightness0" src="adarsh.jpeg">
+                <figcaption>brightness(0%)</figcaption>
+            </figure>
+            <figure>
+                <img class="brightness60" src="adarsh.jpeg">
+                <figcaption>brightness(60%)</figcaption>
+            </figure>
+            <figure>
+                <img class="brightness150" src="adarsh.jpeg">
+                <figcaption>brightness(150%)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Contrast</h1>
+        <p>This filter controls the contrast of your images. Just like the brightness filter, it also accepts values greater than or equal to zero. This filter controls the difference between dark and light parts of the image in CSS. Therefore, a value of 0% results in a gray image. Setting the contrast to 100% gives you the original image and any value beyond that will further increase the image contrast.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="contrast100" src="adarsh.jpeg">
+                <figcaption>Original Image - contrast(100%)</figcaption>
+            </figure>
+            <figure>
+                <img class="contrast0" src="adarsh.jpeg">
+                <figcaption>contrast(0%)</figcaption>
+            </figure>
+            <figure>
+                <img class="contrast60" src="adarsh.jpeg">
+                <figcaption>contrast(60%)</figcaption>
+            </figure>
+            <figure>
+                <img class="contrast150" src="adarsh.jpeg">
+                <figcaption>contrast(150%)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Grayscale</h1>
+        <p>As evident from the name, this filter can help you make your images grayscale. This filter gradually converts all the colors in our images to some shade of gray. A value of 0% will have no effect on our images and a value of 100% will turn them completely grayscale. Negative values are not allowed.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="grayscale0" src="adarsh.jpeg">
+                <figcaption>Original Image - grayscale(0%)</figcaption>
+            </figure>
+            <figure>
+                <img class="grayscale60" src="adarsh.jpeg">
+                <figcaption>grayscale(60%)</figcaption>
+            </figure>
+            <figure>
+                <img class="grayscale100" src="adarsh.jpeg">
+                <figcaption>grayscale(100%)</figcaption>
+            </figure>
+            <figure>
+                <img class="grayscale150" src="adarsh.jpeg">
+                <figcaption>grayscale(150%)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Saturate</h1>
+        <p>This filter controls the saturation of colors in your images. A value of 0% will completely remove all colors from the image, while a value over 100% will make the image supersaturated. At 100%, the final result looks just like the original image. Negative values are not allowed for this filter.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="saturate100" src="adarsh.jpeg">
+                <figcaption>Original Image - saturate(100%)</figcaption>
+            </figure>
+            <figure>
+                <img class="saturate0" src="adarsh.jpeg">
+                <figcaption>saturate(0%)</figcaption>
+            </figure>
+            <figure>
+                <img class="saturate60" src="adarsh.jpeg">
+                <figcaption>saturate(60%)</figcaption>
+            </figure>
+            <figure>
+                <img class="saturate150" src="adarsh.jpeg">
+                <figcaption>saturate(150%)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Sepia</h1>
+        <p>This filter adds a sepia tinge to your images like some old photographs. The amount of sepia added depends on the percentage. At 0%, the final result looks like the original image and at 100% the image will be completely sepia.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="sepia0" src="adarsh.jpeg">
+                <figcaption>Original Image - sepia(0%)</figcaption>
+            </figure>
+            <figure>
+                <img class="sepia60" src="adarsh.jpeg">
+                <figcaption>sepia(60%)</figcaption>
+            </figure>
+            <figure>
+                <img class="sepia100" src="adarsh.jpeg">
+                <figcaption>sepia(100%)</figcaption>
+            </figure>
+            <figure>
+                <img class="sepia150" src="adarsh.jpeg">
+                <figcaption>sepia(150%)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Hue-rotate</h1>
+        <p>This filter applies a hue-rotation to all the colors in your images. The angle at which the colors are rotated depends on the value of the parameter specified. At a value of 0deg, the image remains unchanged. There is no maximum value for this filter. However, the effect of values above 360deg wraps around. This means that both the values 90deg and 450deg will have the same effect.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="hue-rotate0" src="adarsh.jpeg">
+                <figcaption>Original Image - hue-rotate(0%)</figcaption>
+            </figure>
+            <figure>
+                <img class="hue-rotate60" src="adarsh.jpeg">
+                <figcaption>hue-rotate(60%)</figcaption>
+            </figure>
+            <figure>
+                <img class="hue-rotate100" src="adarsh.jpeg">
+                <figcaption>hue-rotate(100%)</figcaption>
+            </figure>
+            <figure>
+                <img class="hue-rotate150" src="adarsh.jpeg">
+                <figcaption>hue-rotate(150%)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Invert</h1>
+        <p>This filter inverts all the colors in your images. The amount of inversion depends on the value of the parameter passed. A value of 0% will not have any effect on the original image, but a value of 100% will completely invert it.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="invert0" src="adarsh.jpeg">
+                <figcaption>Original Image - invert(0%)</figcaption>
+            </figure>
+            <figure>
+                <img class="invert600" src="adarsh.jpeg">
+                <figcaption>invert(60%)</figcaption>
+            </figure>
+            <figure>
+                <img class="invert100" src="adarsh.jpeg">
+                <figcaption>invert(100%)</figcaption>
+            </figure>
+            <figure>
+                <img class="invert150" src="adarsh.jpeg">
+                <figcaption>invert(150%)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Blur</h1>
+        <p>This filter applies a Gaussian blur to the images. It smudges the colors together and spreads them outside their edges. The radius parameter that you pass to this filter determines how many pixels on the screen blend into each other. Larger values will provide more blur. This filter can accept any of the length values except percentage.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="blur0" src="adarsh.jpeg">
+                <figcaption>Original Image - blur(0px)</figcaption>
+            </figure>
+            <figure>
+                <img class="blur60" src="adarsh.jpeg">
+                <figcaption>blur(1px)</figcaption>
+            </figure>
+            <figure>
+                <img class="blur100" src="adarsh.jpeg">
+                <figcaption>blur(0.5em)</figcaption>
+            </figure>
+            <figure>
+                <img class="blur150" src="adarsh.jpeg">
+                <figcaption>blur(1em)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Opacity</h1>
+        <p>This filter will make your images semi-transparent. The images will be completely opaque at 100% and fully transparent at 0%. This filter is similar to the well-known opacity property. One difference between these two is that of performance. The filter property is hardware accelerated on some browsers which can result in better performance.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="opacity100" src="adarsh.jpeg">
+                <figcaption>Original Image - opacity(100%)</figcaption>
+            </figure>
+            <figure>
+                <img class="opacity0" src="adarsh.jpeg">
+                <figcaption>opacity(0%)</figcaption>
+            </figure>
+            <figure>
+                <img class="opacity30" src="adarsh.jpeg">
+                <figcaption>opacity(30%)</figcaption>
+            </figure>
+            <figure>
+                <img class="opacity80" src="adarsh.jpeg">
+                <figcaption>opacity(80%)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+
+    <section>
+        <h1>Url()</h1>
+        <p>While all the filters we discussed up to this point are pretty useful, they are rather general purpose filters. Your project might require something more specific. If none of the filters above meets your requirements, you can create your own SVG filter and use its id to reference it using the url() filter.</p>
+        <div style="display: flex;">
+            <figure>
+                <img src="adarsh.jpeg">
+                <figcaption>Original Image - opacity(100%)</figcaption>
+            </figure>
+            <figure>
+                <img class="greenish" src="adarsh.jpeg">
+                <figcaption>greenish</figcaption>
+            </figure>
+            <figure>
+                <img class="bluish" src="adarsh.jpeg">
+                <figcaption>bluish</figcaption>
+            </figure>
+            <figure>
+                <img class="redish" src="adarsh.jpeg">
+                <figcaption>redish</figcaption>
+            </figure>
+        </div>
+
+        <svg style="position: absolute; top: -99999px" xmlns="http://www.w3.org/2000/svg">
+            <filter id="greenish">
+                <feComponentTransfer>
+                    <feFuncR type="linear" slope="2" intercept="-0.5"/>
+                    <feFuncG type="linear" slope="2" intercept="-0"/>
+                    <feFuncB type="linear" slope="2" intercept="-0.25"/>
+                </feComponentTransfer>
+            </filter>
+            <filter id="bluish">
+                <feComponentTransfer>
+                    <feFuncR type="linear" slope="2" intercept="-0.5"/>
+                    <feFuncG type="linear" slope="2" intercept="-0.1"/>
+                    <feFuncB type="linear" slope="2" intercept="0"/>
+                </feComponentTransfer>
+            </filter>
+            <filter id="redish">
+                <feComponentTransfer>
+                    <feFuncR type="linear" slope="2" intercept="-0.25"/>
+                    <feFuncG type="linear" slope="2" intercept="-0.25" />
+                    <feFuncB type="linear" slope="2" intercept="-0.25"/>
+                </feComponentTransfer>
+            </filter>
+        </svg>
+    </section>
+
+    <section>
+        <h1>Drop Shadow</h1>
+        <p>As the name suggests, this filter adds a drop shadow effect to images. It is basically the blurred, offset version of the input image’s alpha mask drawn in a particular color that you provide. This property requires both the x and the y offset as well as the color of the drop shadow. You can also optionally provide a blur-radius value which will determine if the shadow will be sharp or blurry.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="drop-shadow0" src="adarsh.jpeg">
+                <figcaption>Original Image</figcaption>
+            </figure>
+            <figure>
+                <img class="drop-shadow2" src="adarsh.jpeg">
+                <figcaption>drop-shadow(5px 5px 5px green)</figcaption>
+            </figure>
+            <figure>
+                <img class="drop-shadow3" src="adarsh.jpeg">
+                <figcaption>drop-shadow(15px 15px 15px blue)</figcaption>
+            </figure>
+            <figure>
+                <img class="drop-shadow1" src="adarsh.jpeg">
+                <figcaption>ddrop-shadow(50px 50px 50px red)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Combining and Animating Filters</h1>
+        <p>You can also combine multiple filters together to get a variety of effects. Most of the time, the order of filters does not matter much, however, filters are applied in the order they are placed in your CSS and some filters will override others. For instance, using a sepia filter after a grayscale filter will result in a sepia image but using grayscale after sepia will produce a grayscale image. Filters can also be animated. If you animate them properly, you can create some very interesting effects.</p>
+        <div style="display: flex;">
+            <figure>
+                <img class="hounted" src="foggy.jpeg">
+                <figcaption>hounted animation</figcaption>
+            </figure>
+            <figure>
+                <img class="hounted" src="adarsh.jpeg">
+                <figcaption>hounted animation</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Additional </h1>
+        <p>Even if a filter causes painting outside an element’s box model, it will have no effect on the geometry of that element’s box model. Keep in mind that filters affect all parts of target elements — this includes backgrounds, borders and text-decoration as well. You can also apply filters to videos and iframes as well.</p>
+        <div style="display: flex;">
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.655944081696!2d77.66939615037026!3d12.993843990796355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11415b619309%3A0x8965b451f5258f65!2sInstill%20Learning!5e0!3m2!1sen!2sin!4v1673622406739!5m2!1sen!2sin" width="670" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe1"></iframe>
+                <figcaption>saturate(40)</figcaption>
+            </figure>
+            <figure>
+                <iframe src="https://androidabcd.info" style="height:450px;width:670px" title="Iframe Example" class="iframe2"></iframe>            
+                <figcaption>https://androidabcd.info - saturate(10)</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <h1>Combining and Animating Filters</h1>
+        <div style="display: flex;">
+            <figure>
+                <img class="pencil-effect" src="adarsh.jpeg">
+                <figcaption>hounted animation</figcaption>
+            </figure>
+            <figure class="warhol-effect">
+                <img  src="adarsh.jpeg">
+                <figcaption>hounted animation</figcaption>
+            </figure>
+            <figure class="night-vision-effect">
+                <img src="adarsh.jpeg">
+                <figcaption>night-vision-effect</figcaption>
+            </figure>
+            <figure>
+                <img class="infrared-effect" src="adarsh.jpeg">
+                <figcaption>hounted animation</figcaption>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h1>mirror-x-effect</h1>
+        <div style="display: flex;">
+            <figure class="mirror-x-effect">
+                    <img src="adarsh.jpeg">
+                    <figcaption>mirror-x-effect</figcaption>
+            </figure>
+
+            <figure class="colored-chalkboard-effect">
+                <img src="adarsh.jpeg">
+                <figcaption>colored-chalkboard-effect</figcaption>
+            </figure>
+            <figure class="photo-border-effect">
+                <img src="adarsh.jpeg">
+                <figcaption>hounted animation</figcaption>
+            </figure>
+            <figure class="colored-pencil-effect">
+                <img src="adarsh.jpeg">
+                <figcaption>colored-pencil-effect </figcaption>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h1>mirror-x-effect</h1>
+        <div style="display: flex;">
+            <figure class="airbrush-effect">
+                    <img src="adarsh.jpeg">
+                    <figcaption>mairbrush-effect </figcaption>
+            </figure>
+
+            <figure class="selective-color-effect">
+                <img src="adarsh.jpeg">
+                <figcaption>colored-chalkboard-effect</figcaption>
+            </figure>
+            <figure class="mirror-y-effect ">
+                <img src="adarsh.jpeg">
+                <figcaption>mirror-y-effect</figcaption>
+            </figure>
+            <figure class="chalkboard-effect">
+                <img src="adarsh.jpeg">
+                <figcaption>chalkboard-effect </figcaption>
+            </figure>
+            
+            
+        </div>
+    </section>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,212 @@
+body {
+  margin: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+img
+
+/* Brightness */
+.brightness0 {
+  filter: brightness(0%);
+}
+.brightness60 {
+  filter: brightness(60%);
+}
+.brightness100 {
+  filter: brightness(100%);
+}
+.brightness150 {
+  filter: brightness(150%);
+}
+
+/* Contrast */
+.contrast0 {
+  filter: contrast(0%);
+}
+.contrast60 {
+  filter: contrast(60%);
+}
+.contrast100 {
+  filter: contrast(100%);
+}
+.contrast150 {
+  filter: contrast(150%);
+}
+
+/* Grayscale */
+.grayscale0 {
+  filter: grayscale(0%);
+}
+.grayscale60 {
+  filter: grayscale(60%);
+}
+.grayscale100 {
+  filter: grayscale(60%);
+}
+.grayscale150 {
+  filter: grayscale(150%);
+}
+
+/* Saturate */
+.saturate0 {
+  filter: brightness(0%);
+}
+.saturate60 {
+  filter: brightness(60%);
+}
+.saturate100 {
+  filter: brightness(100%);
+}
+.saturate150 {
+  filter: brightness(150%);
+}
+
+/* Sepia */
+.sepia0 {
+  filter: sepia(0%);
+}
+.sepia60 {
+  filter: sepia(60%);
+}
+.sepia100 {
+  filter: sepia(100%);
+}
+.sepia150 {
+  filter: sepia(150%);
+}
+
+/* hue-rotate(90deg) */
+.hue-rotate0 {
+  filter: hue-rotate(0deg);
+}
+.hue-rotate60 {
+  filter: hue-rotate(60deg);
+}
+.hue-rotate100 {
+  filter: hue-rotate(100deg);
+}
+.hue-rotate150 {
+  filter: hue-rotate(150deg);
+}
+
+/* Invert */
+.invert0 {
+  filter: sepia(0%);
+}
+.invert60 {
+  filter: sepia(60%);
+}
+.invert100 {
+  filter: sepia(100%);
+}
+.invert150 {
+  filter: sepia(150%);
+}
+
+/* Blur */
+.blur0 {
+  filter: blur(0px);
+}
+.blur60 {
+  filter: blur(1px);
+}
+.blur100 {
+  filter: blur(0.5em);
+}
+.blur150 {
+  filter: blur(1em);
+}
+
+/* Opacity */
+.opacity0 {
+  filter: opacity(0%);
+}
+.opacity30 {
+  filter: opacity(30%);
+}
+.opacity80 {
+  filter: opacity(80%);
+}
+.opacity100 {
+  filter: opacity(100%);
+}
+
+/* Url() */
+.greenish {
+  filter: url("#greenish");
+}
+.bluish {
+  filter: url("#bluish");
+}
+.redish {
+  filter: url("#redish");
+}
+
+/* Drop Shadow */
+.drop-shadow0 {
+  width: 97%;
+}
+.drop-shadow1 {
+  width: 97%;
+  filter: drop-shadow(50px 50px 50px red);
+}
+.drop-shadow2 {
+  width: 97%;
+  filter: drop-shadow(5px 5px 5px green);
+}
+.drop-shadow3 {
+  width: 97%;
+  filter: drop-shadow(15px 15px 15px blue);
+}
+
+/* Combining and Animating Filters */
+.hounted {
+  animation: haunted 3s infinite;
+}
+@keyframes haunted {
+  0% {
+    filter: brightness(20%);
+  }
+  48% {
+    filter: brightness(20%);
+  }
+  50% {
+    filter: sepia(1) contrast(2) brightness(200%);
+  }
+  60% {
+    filter: sepia(1) contrast(2) brightness(200%);
+  }
+  62% {
+    filter: brightness(20%);
+  }
+  96% {
+    filter: brightness(20%);
+  }
+  96% {
+    filter: brightness(400%);
+  }
+}
+
+.iframe1 {
+  filter: saturate(40);
+}
+
+.iframe2 {
+  filter: saturate(10);
+}

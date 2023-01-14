@@ -1,0 +1,252 @@
+
+/* pencil effact*/
+.pencil-effect {
+    background-image: url(adarsh.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @supports (filter: invert(1)) and (background-blend-mode: difference) {
+    .pencil-effect {
+      background-image: url(adarsh.jpeg);
+      background-blend-mode: difference;
+      background-position: calc(80% - 1px) calc(80% - 1px), calc(80% + 1px) calc(80% + 1px);
+      filter: brightness(2) invert(1) grayscale(1);
+      box-shadow: inset 0 0 0 1px rgb(32, 19, 19);
+    }
+  }
+
+
+
+  /* */
+  .mirror-x-effect {
+    background-image: url(adarsh.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @supports (transform: scaleX(-1)) {
+    .mirror-x-effect {
+      position: relative;
+    }
+    .mirror-x-effect:before, .mirror-x-effect:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background: inherit;
+    }
+    .mirror-x-effect:before {
+      left: 0;
+      right: 50%;
+      transform: scaleX(-1);
+    }
+    .mirror-x-effect:after {
+      left: 50%;
+      right: 0;
+    }
+  }
+  
+  [class$=-effect] img {
+      vertical-align: top !important;
+      margin: 0 !important;
+      opacity: 0 !important;
+  }
+  
+  /* */
+  .colored-chalkboard-effect {
+    background-image: url(adarsh.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @supports (filter: brightness(2)) and (background-blend-mode: color, difference) {
+    .colored-chalkboard-effect {
+      background-image: url(adarsh.jpeg);
+      background-size: cover;
+      background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px), center;
+      background-blend-mode: color, difference;
+      filter: brightness(2);
+    }
+  }
+  
+  [class$=-effect] img {
+      vertical-align: top !important;
+      margin: 0 !important;
+      opacity: 0 !important;
+  }
+  
+  /**/
+  .colored-pencil-effect {
+    background-image: url(adarsh.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @supports (filter: invert(1)) and (mix-blend-mode: color) {
+    .colored-pencil-effect {
+      position: relative;
+    }
+    .colored-pencil-effect:before, .colored-pencil-effect:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-size: cover;
+      box-shadow: inset 0 0 0 1px black;
+    }
+    .colored-pencil-effect:before {
+      background-image: url(adarsh.jpeg), url(adarsh.jpeg);
+      background-blend-mode: difference;
+      background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
+      filter: brightness(2) invert(1) grayscale(1);
+    }
+    .colored-pencil-effect:after {
+      background: inherit;
+      mix-blend-mode: color;
+    }
+  }
+
+  /**/
+  .photo-border-effect {
+    background-image: url(adarsh.jpeg), url(adarsh.jpeg);
+    background-position: center;
+    background-size: 60%, 20%;
+    background-repeat: no-repeat, repeat;
+  }
+
+  /**/
+  .infrared-effect {
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: hue-rotate(180deg) saturate(2);
+  }
+
+  /**/
+  .night-vision-effect {
+    background-image: url(adarsh.jpeg), radial-gradient(#0F0, #000), repeating-linear-gradient(transparent 0, rgba(0, 0, 0, 0.1) 2.5px, transparent 5px);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+  }
+
+  /**/
+  .warhol-effect {
+    background-image: url(adarsh.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @supports (background-blend-mode: color) {
+    .warhol-effect {
+      background-image: linear-gradient(#14EBFF 0, #14EBFF 50%, #FFFF70 50%, #FFFF70 100%), linear-gradient(#FF85DA 0, #FF85DA 50%, #AAA 50%, #AAA 100%), url(adarsh.jpeg);
+      background-size: 50% 100%, 50% 100%, 50% 50%;
+      background-position: top left, top right;
+      background-repeat: no-repeat, no-repeat, repeat;
+      background-blend-mode: color;
+    }
+  }
+
+  /**/
+  .airbrush-effect {
+    background-image: url(adarsh.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @supports (filter: blur(5px) contrast(5)) and (mix-blend-mode: multiply) {
+    .airbrush-effect {
+      position: relative;
+      overflow: hidden;
+    }
+    .airbrush-effect:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: inherit;
+      filter: brightness(1.5) saturate(100) blur(5px) contrast(5);
+      mix-blend-mode: multiply;
+    }
+  }
+
+  /**/
+  .selective-color-effect {
+    background-image: url(adarsh.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @supports (filter: brightness(3)) and (mix-blend-mode: color) {
+    .selective-color-effect {
+      position: relative;
+    }
+    .selective-color-effect:before, .selective-color-effect:after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: inherit;
+      background-color: red;
+      background-blend-mode: screen;
+      mix-blend-mode: color;
+      filter: brightness(3);
+    }
+  }
+
+  /**/
+  .mirror-y-effect {
+    background-image: url(adarsh.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @supports (transform: scaleY(-1)) {
+    .mirror-y-effect {
+      position: relative;
+    }
+    .mirror-y-effect:before, .mirror-y-effect:after {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      background: inherit;
+    }
+    .mirror-y-effect:before {
+      top: 0;
+      bottom: 50%;
+      transform: scaleY(-1);
+    }
+    .mirror-y-effect:after {
+      top: 50%;
+      bottom: 0;
+    }
+  }
+
+  /**/
+  .chalkboard-effect {
+    background-image: url(adarsh.jpeg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @supports (filter: grayscale(1)) and (background-blend-mode: difference) {
+    .chalkboard-effect {
+      background-image: url(adarsh.jpeg), url(adarsh.jpeg);
+      background-blend-mode: difference;
+      background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
+      filter: brightness(1.5) grayscale(1);
+    }
+  }
