@@ -1,0 +1,242 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem; /* Adjusted padding */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.6rem; /* Adjusted font size */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 16px; /* Adjusted margin */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main sections styling */
+section {
+    padding: 1.6rem; /* Adjusted padding */
+    margin-bottom: 16px; /* Adjusted margin */
+    background-color: #fff;
+    border-radius: 4px; /* Adjusted border radius */
+    box-shadow: 0 1.6px 4px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+}
+
+section h2 {
+    margin-bottom: 0.8rem; /* Adjusted margin */
+    font-size: 1.2rem; /* Adjusted font size */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 0.8rem; /* Adjusted padding */
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Grid container for product cards */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted minmax width */
+    grid-gap: 16px; /* Adjusted grid gap */
+}
+
+/* Product card styles */
+.product {
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Adjusted border radius */
+    padding: 0.8rem; /* Adjusted padding */
+    background-color: #fff;
+    box-shadow: 0 1.6px 4px rgba(0, 0, 0, 0.1); /* Adjusted box shadow */
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 8px; /* Adjusted margin */
+}
+
+.product h3 {
+    font-size: 1rem; /* Adjusted font size */
+    margin-bottom: 0.4rem; /* Adjusted margin */
+}
+
+.product p {
+    margin-bottom: 0.4rem; /* Adjusted margin */
+}
+
+.product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.8rem; /* Adjusted padding */
+    border-radius: 2px; /* Adjusted border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+/* Responsive styling for product cards */
+@media (max-width: 767px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* About Us section */
+#about {
+    padding: 2rem;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    #about {
+        padding: 1.5rem;
+    }
+
+    #about h2 {
+        font-size: 1.5rem;
+    }
+
+    #about p {
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* Contact Us section */
+#contact {
+    padding: 2rem;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Contact container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact info */
+.contact-info {
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Contact form container */
+.contact-form-container {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-top: -60px;
+}
+
+/* Contact form styles */
+#contact-form {
+    margin-top: 1rem;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+/* Responsive styling for Contact Us section */
+@media (min-width: 768px) {
+    .contact-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-info,
+    .contact-form-container {
+        width: 48%;
+    }
+}
