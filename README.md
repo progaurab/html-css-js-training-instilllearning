@@ -15,6 +15,7 @@
 
 
 
+```shell
 …or create a new repository on the command line
 echo "# Example" >> README.md
 git init
@@ -27,3 +28,5 @@ git push -u origin master
 git remote add origin https://github.com/progaurab/Example.git
 git branch -M master
 git push -u origin master
+
+```
