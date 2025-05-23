@@ -1,11 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Training Module</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav {
+      background-color: #444;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    section {
+      padding: 2rem;
+      background: white;
+      margin: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 0.5rem;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    form label {
+      margin-top: 1rem;
+    }
+    form input, form select, form textarea, form button {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-    gAURAB
+  <header>
+    <h1>HTML & CSS Training Module</h1>
+  </header>
+
+  <nav>
+    <a href="#intro">Intro</a>
+    <a href="#tags">Tags</a>
+    <a href="#images">Images</a>
+    <a href="#lists">Lists</a>
+    <a href="#table">Table</a>
+    <a href="#forms">Forms</a>
+    <a href="#semantic">Semantic</a>
+    <a href="#iframe">Iframe</a>
+    <a href="#events">Events</a>
+  </nav>
+
+  <section id="intro">
+    <h2>Introduction to HTML</h2>
+    <p>HTML stands for HyperText Markup Language. It is used to structure content on the web. Let's get started with a simple HTML document:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;My First Page&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </section>
+
+  <section id="tags">
+    <h2>Basic Tags, Elements & Attributes</h2>
+    <p>Tags define how content appears. Attributes provide additional info. Example:</p>
+    <pre><code>&lt;p title="tooltip" style="color:blue"&gt;Paragraph with attributes&lt;/p&gt;</code></pre>
+  </section>
+
+  <section id="images">
+    <h2>Images</h2>
+    <img src="https://via.placeholder.com/300" alt="Sample Image">
+    <p>Use <code>&lt;img&gt;</code> tag with src and alt attributes.</p>
+  </section>
+
+  <section id="lists">
+    <h2>Lists</h2>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+    </ol>
+  </section>
+
+  <section id="table">
+    <h2>Tables</h2>
+    <table>
+      <tr><th>Name</th><th>Age</th></tr>
+      <tr><td>Alice</td><td>25</td></tr>
+      <tr><td>Bob</td><td>30</td></tr>
+    </table>
+  </section>
+
+  <section id="forms">
+    <h2>HTML Forms and Web Forms 2.0</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+
+      <label for="color">Favorite Color:</label>
+      <input type="color" id="color" name="color">
+
+      <label for="range">Experience (1-10):</label>
+      <input type="range" id="range" min="1" max="10">
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="semantic">
+    <h2>Semantic Elements</h2>
+    <article>
+      <h3>Article Heading</h3>
+      <p>This is a semantic article tag with structured meaning.</p>
+    </article>
+    <aside>
+      <p>Aside content or related links.</p>
+    </aside>
+    <section>
+      <p>Another section inside section.</p>
+    </section>
+  </section>
+
+  <section id="iframe">
+    <h2>Iframe</h2>
+    <iframe src="https://example.com"></iframe>
+    <p>Use <code>&lt;iframe&gt;</code> to embed another page.</p>
+  </section>
+
+  <section id="events">
+    <h2>HTML Events</h2>
+    <button onclick="alert('Button Clicked!')">Click Me</button>
+    <input type="text" onmouseover="this.style.backgroundColor='yellow'" placeholder="Hover over me">
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HTML Training. All rights reserved.</p>
+  </footer>
 </body>
 </html>
